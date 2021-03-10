@@ -33,7 +33,7 @@ setup(
     package_data={
         'jip.scripts': ['*.jip']
     },
-    install_requires=["sqlalchemy>=0.8.2",
+    install_requires=["sqlalchemy>=1.2.19",
                       "jinja2>=2.7",
                       "argparse"
                       ],
