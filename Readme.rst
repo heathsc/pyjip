@@ -59,6 +59,9 @@ requests.
 
 Changelog
 =========
+0.7:
+    * Merge in python3 support
+    * Set SQLAlchemy version to 1.2.19 
 0.6:
     * Add MySQL support [`Issue #53 <https://github.com/thasso/pyjip/issues/53>`_]
     * Hidden options are not resolved when called explicitly [`Issue #51 <https://github.com/thasso/pyjip/issues/51>`_]
