@@ -644,7 +644,6 @@ def init(path=None, in_memory=False, pool=None):
         # create engine
         engine = sql_create_engine(path)
     elif type == 'mysql':
-<<<<<<< HEAD
         import urlparse as up
 
         # Split connection string
@@ -652,12 +651,6 @@ def init(path=None, in_memory=False, pool=None):
         db_conn_string = up.urlunsplit(
             (dburl.scheme, dburl.netloc, '', dburl.query, dburl.fragment))
         db_database = dburl.path[1:]  # Trim the forward slash
-=======
-        # Split connection string
-        dburl = urlsplit(path)
-        db_conn_string = urlunsplit((dburl.scheme, dburl.netloc, '', dburl.query, dburl.fragment))
-        db_database = dburl.path[1:] # Trim the forward slash
->>>>>>> feature/python3
 
         # Prepare the connection to the DBMS, no DB selected
         engine = sql_create_engine(db_conn_string, poolclass=pool)
